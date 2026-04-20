@@ -18,7 +18,6 @@ with open("/config/processing_log_config.yml", "r") as f:
 
 logger = logging.getLogger("basicLogger")
 
-
 # Load app configuration
 CONFIG_FILE = "/config/processing_config.yml"
 

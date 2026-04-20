@@ -1,24 +1,28 @@
-version: '3.8'
+version: '3.8'  # Docker Compose version
 
 services:
+
+  # -------------------- DATABASE --------------------
   db:
     image: mysql:8.0
     container_name: lab_mysql
-    restart: always
+    restart: always  # always restart if container stops
     environment:
-      MYSQL_DATABASE: 'sba_db'
-      MYSQL_USER: 'sba_user'
-      MYSQL_PASSWORD: 'password'
-      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_DATABASE: 'sba_db'        # database created at startup
+      MYSQL_USER: 'sba_user'          # app user
+      MYSQL_PASSWORD: 'password'      # password for app user
+      MYSQL_RANDOM_ROOT_PASSWORD: '1' # auto-generate root password
       MYSQL_USER_PLUGIN: 'mysql_native_password'
     volumes:
-      - my-db:/var/lib/mysql
+      - my-db:/var/lib/mysql  # persistent DB storage
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]  # checks if MySQL is ready
       interval: 10s
       timeout: 5s
       retries: 5
 
+  # -------------------- ZOOKEEPER --------------------
+  # Kafka depends on Zookeeper for coordination (leader election, metadata, etc.)
   zookeeper:
     image: confluentinc/cp-zookeeper:7.4.1
     container_name: lab_zookeeper
@@ -26,58 +30,68 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
     volumes:
-      - zookeeper-data:/data
+      - zookeeper-data:/data  # persistent state
     healthcheck:
-      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      test: ["CMD", "nc", "-z", "localhost", "2181"]  # checks if port is open
       interval: 10s
       timeout: 5s
       retries: 5
 
+  # -------------------- KAFKA --------------------
+  # Acts as the message broker between all microservices
   kafka:
     image: confluentinc/cp-kafka:7.4.1
     container_name: lab_kafka
     depends_on:
       zookeeper:
-        condition: service_healthy
+        condition: service_healthy  # only start when Zookeeper is ready
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
-      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092  # internal Docker hostname
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092           # listen on all interfaces
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     volumes:
-      - kafka-data:/kafka
+      - kafka-data:/kafka  # persistent Kafka logs
     healthcheck:
-      test: ["CMD", "nc", "-z", "kafka", "9092"]
+      test: ["CMD", "nc", "-z", "kafka", "9092"]  # check if Kafka is reachable
       interval: 10s
       timeout: 5s
       retries: 5
 
+  # -------------------- DASHBOARD (FRONTEND) --------------------
+  # UI that users interact with
   dashboard:
     build: .
     container_name: dashboard_ui
     ports:
-      - "8080:80"
+      - "8080:80"  # expose UI on localhost:8080
 
+  # -------------------- RECEIVER SERVICE --------------------
+  # Entry point for incoming data/events
+  # Likely receives HTTP requests and pushes them to Kafka
   receiver:
     build:
       context: ./receiver
     container_name: receiver-service
     depends_on:
       kafka:
-        condition: service_healthy
+        condition: service_healthy  # needs Kafka to publish messages
       db:
-        condition: service_healthy
+        condition: service_healthy  # may store initial data
     ports:
       - "8081:8080"
     environment:
-      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
-      MYSQL_HOST: db
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092  # connect to Kafka
+      MYSQL_HOST: db                       # connect to MySQL
       MYSQL_PORT: 3306
     volumes:
       - ./config:/config
       - ./logs:/logs
 
+  # -------------------- PROCESSING SERVICE --------------------
+  # Consumes events from Kafka and processes them
+  # Likely transforms or enriches data before passing it along
   processing:
     build:
       context: ./processing
@@ -86,7 +100,7 @@ services:
       kafka:
         condition: service_healthy
       storage:
-        condition: service_healthy
+        condition: service_healthy  # may rely on storage to save results
     ports:
       - "8082:8080"
     environment:
@@ -96,6 +110,8 @@ services:
       - ./logs:/logs
       - ./data/processing:/data
 
+  # -------------------- ANALYZER SERVICE --------------------
+  # Consumes Kafka data and performs analysis (e.g., stats, insights)
   analyzer:
     build:
       context: ./analyzer
@@ -111,6 +127,8 @@ services:
       - ./config:/config
       - ./logs:/logs
 
+  # -------------------- STORAGE SERVICE --------------------
+  # Responsible for persisting processed data into MySQL
   storage:
     build:
       context: ./storage
@@ -123,10 +141,12 @@ services:
       - ./config:/config
       - ./logs:/logs
     healthcheck:
-      test: ["CMD", "echo", "ok"]
+      test: ["CMD", "echo", "ok"]  # simple healthcheck (always passes)
       interval: 10s
       retries: 1
 
+  # -------------------- HEALTH CHECK SERVICE --------------------
+  # Monitors the health/status of all microservices
   health-check:
     build:
       context: ./health-check
@@ -143,13 +163,15 @@ services:
     ports:
       - "8120:8120"
     environment:
-      CONFIG_PATH: /config/health_config.yml
+      CONFIG_PATH: /config/health_config.yml  # config for what to monitor
     volumes:
       - ./config:/config
       - ./logs:/logs
       - ./data/health:/data
 
+# -------------------- VOLUMES --------------------
+# Used for persistent storage (data survives container restarts)
 volumes:
-  my-db: {}
-  kafka-data: {}
-  zookeeper-data: {}
+  my-db: {}          # MySQL data
+  kafka-data: {}     # Kafka logs
+  zookeeper-data: {} # Zookeeper state
