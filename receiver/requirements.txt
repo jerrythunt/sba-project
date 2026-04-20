@@ -1,0 +1,7 @@
+connexion[flask,uvicorn,swagger-ui]
+PyYAML
+kafka-python
+sqlalchemy
+mysqlclient
+httpx
+apscheduler

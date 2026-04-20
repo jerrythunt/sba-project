@@ -1,0 +1,204 @@
+openapi: 3.0.3
+info:
+  title: Transit Analyzer API
+  version: 1.0.0
+  description: Provides analyzed transit events and statistics
+servers:
+  - url: /
+    description: Local analyzer service
+
+paths:
+  /arrival/{index}:
+    get:
+      summary: Get an arrival event by index
+      operationId: app.get_arrival_event
+      parameters:
+        - name: index
+          in: path
+          description: Index of arrival event in the storage history
+          required: true
+          schema:
+            type: integer
+            example: 0
+      responses:
+        '200':
+          description: Successfully returned arrival event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrivalEvent'
+        '400':
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+        '404':
+          description: Not found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+
+  /delay/{index}:
+    get:
+      summary: Get a delay event by index
+      operationId: app.get_delay_event
+      parameters:
+        - name: index
+          in: path
+          description: Index of delay event in the storage history
+          required: true
+          schema:
+            type: integer
+            example: 0
+      responses:
+        '200':
+          description: Successfully returned delay event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DelayEvent'
+        '400':
+          description: Invalid request
+        '404':
+          description: Not found
+
+  /stats:
+    get:
+      summary: Get analyzer statistics
+      operationId: app.get_stats
+      description: Returns cumulative counts and max delays
+      responses:
+        '200':
+          description: Successfully returned stats
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AnalyzerStats'
+
+  /arrival/latest:
+    get:
+      operationId: app.get_latest_arrival
+      responses:
+        '200':
+          description: Latest arrival event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ArrivalEvent'
+  /delay/latest:
+    get:
+      operationId: app.get_latest_delay
+      responses:
+        '200':
+          description: Latest delay event
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DelayEvent'    
+  
+  /health:
+    get:
+      summary: Health Check
+      description: Returns the health status of the Analyzer service
+      operationId: app.get_health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok         
+
+components:
+  schemas:
+    ArrivalEvent:
+      type: object
+      required:
+        - senderId
+        - routeId
+        - stopId
+        - scheduledArrival
+        - actualArrival
+        - delayMinutes
+        - vehicleType
+        - batchTimestamp
+      properties:
+        senderId:
+          type: string
+        routeId:
+          type: string
+        stopId:
+          type: string
+        scheduledArrival:
+          type: string
+          format: date-time
+        actualArrival:
+          type: string
+          format: date-time
+        delayMinutes:
+          type: number
+        vehicleType:
+          type: string
+          enum: [BUS, TRAIN]
+        batchTimestamp:
+          type: string
+          format: date-time
+
+    DelayEvent:
+      type: object
+      required:
+        - senderId
+        - routeId
+        - delayDurationMinutes
+        - cause
+        - reportedAt
+        - batchTimestamp
+      properties:
+        senderId:
+          type: string
+        routeId:
+          type: string
+        delayDurationMinutes:
+          type: number
+        cause:
+          type: string
+          enum: [TRAFFIC, WEATHER, MECHANICAL, STAFFING, OTHER]
+        reportedAt:
+          type: string
+          format: date-time
+        batchTimestamp:
+          type: string
+          format: date-time
+
+    AnalyzerStats:
+      type: object
+      required:
+        - num_arrival_events
+        - num_delay_events
+        - max_arrival_delay
+        - max_reported_delay
+      properties:
+        num_arrival_events:
+          type: integer
+          example: 150
+        num_delay_events:
+          type: integer
+          example: 80
+        max_arrival_delay:
+          type: number
+          example: 12
+        max_reported_delay:
+          type: number
+          example: 25

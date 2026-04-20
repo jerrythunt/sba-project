@@ -1,0 +1,8 @@
+storage_service:
+  arrivals_url: "http://storage:8080/arrival-times"
+  delays_url: "http://storage:8080/delay-reports"
+
+processing:
+  interval_seconds: 5   # run every 10 seconds
+statistics_file: /data/data.json
+

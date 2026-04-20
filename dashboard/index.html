@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ACIT3855 statistics dashboard" />
+    <script src="updateStats.js" defer></script>
+    <title>ACIT3855 - 🚌 BUS TRACKER 🚌</title>
+</head>
+
+<body>
+    <main id="dashboard">
+
+        <h1>BUS TRACKER 2025</h1>
+        <h5>Last update: <span id="last-updated-value">N/A</span></h5>
+
+        <div id="messages"></div>
+
+        <!-- Big container -->
+        <div id="container">
+
+            <!-- Service Health -->
+            <div class="service-card">
+                <h2>Service Health</h2>
+                <div class="card">
+                    <h3>Storage Service</h3>
+                    <span id="storage-status">Loading...</span>
+                </div>
+                <div class="card">
+                    <h3>Processing Service</h3>
+                    <span id="processing-status">Loading...</span>
+                </div>
+                <div class="card">
+                    <h3>Receiver Service</h3>
+                    <span id="receiver-status">Loading...</span>
+                </div>
+                <div class="card">
+                    <h3>Analyzer Service</h3>
+                    <span id="analyzer-status">Loading...</span>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="service-card">
+                <h2>Statistics</h2>
+                <div class="card">
+                    <h3>Processing Stats</h3>
+                    <code id="processing-stats">Loading...</code>
+                </div>
+                <div class="card">
+                    <h3>Analyzer Stats</h3>
+                    <code id="analyzer-stats">Loading...</code>
+                </div>
+            </div>
+
+            <!-- Latest Analyzer Events -->
+            <div class="service-card">
+                <h2>Analyzer Events</h2>
+                <div class="card">
+                    <h3>Latest Arrival Event</h3>
+                    <code id="event-snow">Loading...</code>
+                </div>
+                <div class="card">
+                    <h3>Latest Delay Event</h3>
+                    <code id="event-lift">Loading...</code>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+</html>

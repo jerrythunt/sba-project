@@ -1,0 +1,155 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: lab_mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'sba_db'
+      MYSQL_USER: 'sba_user'
+      MYSQL_PASSWORD: 'password'
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+      MYSQL_USER_PLUGIN: 'mysql_native_password'
+    volumes:
+      - my-db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.4.1
+    container_name: lab_zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    volumes:
+      - zookeeper-data:/data
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  kafka:
+    image: confluentinc/cp-kafka:7.4.1
+    container_name: lab_kafka
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    volumes:
+      - kafka-data:/kafka
+    healthcheck:
+      test: ["CMD", "nc", "-z", "kafka", "9092"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  dashboard:
+    build: .
+    container_name: dashboard_ui
+    ports:
+      - "8080:80"
+
+  receiver:
+    build:
+      context: ./receiver
+    container_name: receiver-service
+    depends_on:
+      kafka:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    ports:
+      - "8081:8080"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+
+  processing:
+    build:
+      context: ./processing
+    container_name: processing-service
+    depends_on:
+      kafka:
+        condition: service_healthy
+      storage:
+        condition: service_healthy
+    ports:
+      - "8082:8080"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+      - ./data/processing:/data
+
+  analyzer:
+    build:
+      context: ./analyzer
+    container_name: analyzer-service
+    depends_on:
+      kafka:
+        condition: service_healthy
+    ports:
+      - "8083:8080"
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+
+  storage:
+    build:
+      context: ./storage
+    container_name: storage-service
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      MYSQL_HOST: db
+      MYSQL_PORT: 3306
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+    healthcheck:
+      test: ["CMD", "echo", "ok"]
+      interval: 10s
+      retries: 1
+
+  health-check:
+    build:
+      context: ./health-check
+    container_name: health-check-service
+    depends_on:
+      receiver:
+        condition: service_started
+      storage:
+        condition: service_started
+      processing:
+        condition: service_started
+      analyzer:
+        condition: service_started
+    ports:
+      - "8120:8120"
+    environment:
+      CONFIG_PATH: /config/health_config.yml
+    volumes:
+      - ./config:/config
+      - ./logs:/logs
+      - ./data/health:/data
+
+volumes:
+  my-db: {}
+  kafka-data: {}
+  zookeeper-data: {}

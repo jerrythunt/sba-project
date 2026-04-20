@@ -1,0 +1,164 @@
+openapi: 3.0.3
+info:
+  title: Public Transit Storage API
+  version: 1.0.0
+  description: API to retrieve arrival and delay events from the database.
+
+servers:
+  - url: http://storage:8080
+    description: Local development server
+
+paths:
+  /arrival-times:
+    get:
+      summary: Get arrival events within a timestamp range
+      operationId: app.get_arrival_events
+      parameters:
+        - name: start_timestamp
+          in: query
+          description: Start timestamp (inclusive)
+          required: true
+          schema:
+            type: string
+            format: date-time
+            example: "2026-01-12T08:00:00Z"
+        - name: end_timestamp
+          in: query
+          description: End timestamp (exclusive)
+          required: true
+          schema:
+            type: string
+            format: date-time
+            example: "2026-01-12T09:00:00Z"
+      responses:
+        '200':
+          description: List of arrival events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ArrivalEvent'
+
+  /delay-reports:
+    get:
+      summary: Get delay events within a timestamp range
+      operationId: app.get_delay_events
+      parameters:
+        - name: start_timestamp
+          in: query
+          description: Start timestamp (inclusive)
+          required: true
+          schema:
+            type: string
+            format: date-time
+            example: "2026-01-12T08:00:00Z"
+        - name: end_timestamp
+          in: query
+          description: End timestamp (exclusive)
+          required: true
+          schema:
+            type: string
+            format: date-time
+            example: "2026-01-12T09:00:00Z"
+      responses:
+        '200':
+          description: List of delay events
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DelayEvent'
+
+  /health:
+    get:
+      summary: Health Check
+      description: Returns the health status of the Storage service
+      operationId: app.get_health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+components:
+  schemas:
+    ArrivalEvent:
+      type: object
+      required:
+        - senderId
+        - routeId
+        - stopId
+        - scheduledArrival
+        - actualArrival
+        - delayMinutes
+        - vehicleType
+        - batchTimestamp
+      properties:
+        senderId:
+          type: string
+          example: BUS_5001
+        routeId:
+          type: string
+          example: "99 B Line"
+        stopId:
+          type: string
+          example: "50059"
+        scheduledArrival:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:35:00Z"
+        actualArrival:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:39:00Z"
+        delayMinutes:
+          type: number
+          example: 4
+        vehicleType:
+          type: string
+          enum: [BUS, TRAIN]
+          example: BUS
+        batchTimestamp:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:30:00Z"
+
+    DelayEvent:
+      type: object
+      required:
+        - senderId
+        - routeId
+        - delayDurationMinutes
+        - cause
+        - reportedAt
+        - batchTimestamp
+      properties:
+        senderId:
+          type: string
+          example: DISPATCH_01
+        routeId:
+          type: string
+          example: "99 B Line"
+        delayDurationMinutes:
+          type: number
+          example: 5
+        cause:
+          type: string
+          enum: [TRAFFIC, WEATHER, MECHANICAL, STAFFING, OTHER]
+          example: TRAFFIC
+        reportedAt:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:39:00Z"
+        batchTimestamp:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:40:00Z"

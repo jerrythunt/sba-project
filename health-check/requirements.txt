@@ -1,0 +1,5 @@
+connexion[flask]
+httpx
+pyyaml
+starlette
+uvicorn

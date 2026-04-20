@@ -1,0 +1,9 @@
+connexion[flask,uvicorn,swagger-ui]
+flask-cors
+PyYAML
+kafka-python
+sqlalchemy
+mysqlclient
+httpx
+apscheduler
+cryptography

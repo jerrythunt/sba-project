@@ -1,0 +1,20 @@
+openapi: 3.0.3
+info:
+  title: Health Check Service
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8120
+
+paths:
+  /health-status:
+    get:
+      summary: Get system health status
+      operationId: app.get_health_status
+      responses:
+        '200':
+          description: Health status of all services
+          content:
+            application/json:
+              schema:
+                type: object

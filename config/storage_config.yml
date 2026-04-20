@@ -1,0 +1,13 @@
+version: 1
+datastore:
+  user: sba_user
+  password: password
+  hostname: db
+  port: 3306
+  db: sba_db
+
+events:
+  hostname: kafka
+  port: 9092
+  topic: events
+

@@ -1,0 +1,10 @@
+services:
+  receiver: http://receiver:8080/health
+  storage: http://storage:8080/health
+  processing: http://processing:8080/health
+  analyzer: http://analyzer:8080/health
+
+interval_seconds: 10
+timeout_seconds: 5
+
+data_file: /data/health.json

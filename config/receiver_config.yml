@@ -1,0 +1,10 @@
+events:
+  hostname: kafka
+  port: 9092
+  topic: events
+
+version: 1
+arrivals: 
+  url: http://storage:8080/arrival-times
+delays: 
+  url: http://storage:8080/delay-reports

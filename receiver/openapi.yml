@@ -1,0 +1,171 @@
+openapi: 3.0.3
+info:
+  title: Public Transit Delay Monitoring API
+  version: 1.0.0
+  description: >
+    API to receive batch events from Metro Vancouver buses and trains for arrival times and delay reports.
+
+servers:
+  - url: http://receiver:8080
+    description: Local development server
+
+paths:
+  /arrival-times/batch:
+    post:
+      summary: Submit a batch of arrival time events
+      description: Receives arrival times from buses and trains.
+      operationId: app.submit_arrival_time_batch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ArrivalTimeBatch'
+      responses:
+        '200':
+          description: Batch received successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+        '400':
+          description: Invalid request
+
+  /delay-reports/batch:
+    post:
+      summary: Submit a batch of delay report events
+      description: Receives delay reports from vehicles or dispatch systems.
+      operationId: app.submit_delay_report_batch
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/DelayReportBatch'
+      responses:
+        '200':
+          description: Batch received successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: success
+        '400':
+          description: Invalid request
+  
+  /health:
+    get:
+      summary: Health Check
+      description: Returns the health status of the Receiver service
+      operationId: app.get_health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+components:
+  schemas:
+    ArrivalTimeBatch:
+      type: object
+      required:
+        - senderId
+        - sentAt
+        - routeId
+        - items
+      properties:
+        senderId:
+          type: string
+          example: BUS_5001
+        sentAt:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:30:00Z"
+        routeId:
+          type: string
+          example: "99 B Line"
+        items:
+          type: array
+          items:
+            type: object
+            required:
+              - stopId
+              - scheduledArrival
+              - actualArrival
+              - delayMinutes
+              - vehicleType
+            properties:
+              stopId:
+                type: string
+                example: "50059"
+              scheduledArrival:
+                type: string
+                format: date-time
+                example: "2026-01-12T08:35:00Z"
+              actualArrival:
+                type: string
+                format: date-time
+                example: "2026-01-12T08:39:00Z"
+              delayMinutes:
+                type: number
+                example: 4
+              vehicleType:
+                type: string
+                enum: [BUS, TRAIN]
+                example: BUS
+
+    DelayReportBatch:
+      type: object
+      required:
+        - senderId
+        - sentAt
+        - region
+        - items
+      properties:
+        senderId:
+          type: string
+          example: DISPATCH_01
+        sentAt:
+          type: string
+          format: date-time
+          example: "2026-01-12T08:40:00Z"
+        region:
+          type: string
+          example: "Vancouver Downtown"
+        items:
+          type: array
+          items:
+            type: object
+            required:
+              - routeId
+              - delayDurationMinutes
+              - cause
+              - reportedAt
+            properties:
+              routeId:
+                type: string
+                example: "99 B Line"
+              delayDurationMinutes:
+                type: number
+                example: 5
+              cause:
+                type: string
+                enum: [TRAFFIC, WEATHER, MECHANICAL, STAFFING, OTHER]
+                example: TRAFFIC
+              reportedAt:
+                type: string
+                format: date-time
+                example: "2026-01-12T08:39:00Z"

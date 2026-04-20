@@ -1,0 +1,611 @@
+2026-03-03 22:38:48,718 - basicLogger - INFO - Analyzer consuming from topic: events
+2026-03-03 22:38:51,946 - basicLogger - INFO - Arrival event: trace_id=b1c6ade8-1be5-44f0-b936-1aa423ad5448, stop_id=50031, delay=3 mins
+2026-03-03 22:38:51,947 - basicLogger - INFO - Delay event: trace_id=1c99a409-5c2e-4248-9376-aaa81a59583e, route_id=99 B Line, delay=0 mins, cause=TRAFFIC
+2026-03-03 22:38:51,947 - basicLogger - INFO - Arrival event: trace_id=5b56cb71-3dc2-49ad-8e92-c954ead47534, stop_id=50068, delay=14 mins
+2026-03-03 22:38:51,947 - basicLogger - INFO - Delay event: trace_id=2f7ae51c-665c-41a0-bc6e-e6f96ff9815e, route_id=99 B Line, delay=2 mins, cause=TRAFFIC
+2026-03-03 22:38:51,948 - basicLogger - INFO - Arrival event: trace_id=590b7b57-0b03-418d-bf9d-ed20f851d8d8, stop_id=50033, delay=6 mins
+2026-03-03 22:38:51,948 - basicLogger - INFO - Delay event: trace_id=b25216c0-62f9-4ad4-919b-36dc7c566a41, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-03 22:38:51,948 - basicLogger - INFO - Arrival event: trace_id=7d006465-7dda-44ce-a0f9-de2ce5c14b47, stop_id=50036, delay=13 mins
+2026-03-03 22:38:51,949 - basicLogger - INFO - Delay event: trace_id=8209ffb6-ec11-4a45-a028-bc8a810605e5, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-03 22:38:51,949 - basicLogger - INFO - Arrival event: trace_id=8a6d8137-eab9-4f40-b237-dfca78acd4ef, stop_id=50085, delay=18 mins
+2026-03-03 22:38:51,949 - basicLogger - INFO - Delay event: trace_id=0a124d32-0871-40a7-8ffb-c96439365fa9, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-03 22:38:51,949 - basicLogger - INFO - Arrival event: trace_id=77f456a6-b2a2-4e4e-b7cb-17115eb2fdb7, stop_id=50082, delay=10 mins
+2026-03-03 22:38:51,949 - basicLogger - INFO - Delay event: trace_id=f824acb0-35ca-4519-866b-5fd76b547193, route_id=99 B Line, delay=0 mins, cause=TRAFFIC
+2026-03-03 22:38:51,950 - basicLogger - INFO - Arrival event: trace_id=92a12e01-48fc-4809-8eb0-d97688864a46, stop_id=50054, delay=14 mins
+2026-03-03 22:38:51,950 - basicLogger - INFO - Delay event: trace_id=3ffd93ed-dbb2-4da7-83e6-2819af0abc30, route_id=99 B Line, delay=7 mins, cause=TRAFFIC
+2026-03-03 22:38:51,950 - basicLogger - INFO - Arrival event: trace_id=956651be-49c3-477f-9158-6a9c3b7199c8, stop_id=50048, delay=13 mins
+2026-03-03 22:38:51,950 - basicLogger - INFO - Delay event: trace_id=783bafdf-340a-46b8-9235-5b0d1e9ed47d, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-03 22:38:51,951 - basicLogger - INFO - Arrival event: trace_id=d40135c4-2b26-41ef-8b0b-40499119976b, stop_id=50032, delay=9 mins
+2026-03-03 22:38:51,951 - basicLogger - INFO - Delay event: trace_id=d62cc21c-9cb4-4a05-ad5e-804a32992a07, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-03 22:38:51,951 - basicLogger - INFO - Arrival event: trace_id=87d19ec3-7d24-453c-b403-b60a073353f9, stop_id=50066, delay=18 mins
+2026-03-03 22:38:51,951 - basicLogger - INFO - Delay event: trace_id=9d1e7b3f-1438-48de-9a73-7a9575120ae3, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-03 22:38:51,952 - basicLogger - INFO - Arrival event: trace_id=20bf0e5f-a767-4a57-a7b1-fd34e50d2255, stop_id=50032, delay=7 mins
+2026-03-03 22:38:51,952 - basicLogger - INFO - Delay event: trace_id=24944438-2153-41d1-8205-fa668ed49b04, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-03 22:38:51,952 - basicLogger - INFO - Arrival event: trace_id=7f8e2812-d6fb-4078-9e48-7a389ccf336f, stop_id=50023, delay=6 mins
+2026-03-03 22:38:51,952 - basicLogger - INFO - Delay event: trace_id=f26e5898-1cec-4672-840b-1a313da1645b, route_id=99 B Line, delay=2 mins, cause=TRAFFIC
+2026-03-03 22:38:51,952 - basicLogger - INFO - Arrival event: trace_id=e3a35a60-40e5-45e9-913b-87078dc47b1f, stop_id=50055, delay=1 mins
+2026-03-03 22:38:51,953 - basicLogger - INFO - Delay event: trace_id=e24063f0-257a-438a-9bfa-aa782f427a74, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-03 22:38:51,953 - basicLogger - INFO - Arrival event: trace_id=4c67053e-b01c-4f75-8bd7-befd7e821582, stop_id=50080, delay=13 mins
+2026-03-03 22:38:51,953 - basicLogger - INFO - Delay event: trace_id=f05fe5f1-7327-4c33-89d8-872ff1b8b4e6, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-03 22:38:51,953 - basicLogger - INFO - Arrival event: trace_id=5f9c226b-1e49-4f01-8bf0-5c659f4163f9, stop_id=50050, delay=9 mins
+2026-03-03 22:38:51,954 - basicLogger - INFO - Delay event: trace_id=0f60a9ae-719d-4732-b84a-ad4ce0e97ad7, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-03 22:38:51,954 - basicLogger - INFO - Arrival event: trace_id=d5e14639-8307-4765-bc17-3752fe2bf2ed, stop_id=50063, delay=7 mins
+2026-03-03 22:38:51,954 - basicLogger - INFO - Delay event: trace_id=f5fb4858-a2ad-44e1-89fc-8cc83e2c5a79, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-03 22:38:51,954 - basicLogger - INFO - Arrival event: trace_id=50e0c10a-bc70-4599-8ca1-f124966fb4c7, stop_id=50079, delay=3 mins
+2026-03-03 22:38:51,955 - basicLogger - INFO - Delay event: trace_id=47a150f2-fe39-4828-a888-f7a6bb7508f0, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-03 22:38:51,955 - basicLogger - INFO - Arrival event: trace_id=24b14bf3-1011-4bc0-b011-6b6aaeecf998, stop_id=50028, delay=13 mins
+2026-03-03 22:38:51,955 - basicLogger - INFO - Delay event: trace_id=7ac42b79-c4a9-4a75-9217-55f7de502f55, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-03 22:38:51,955 - basicLogger - INFO - Arrival event: trace_id=b04d317e-03b3-4041-b6a7-5911b31307a3, stop_id=50077, delay=2 mins
+2026-03-03 22:38:51,956 - basicLogger - INFO - Delay event: trace_id=c7d31ec8-c13d-447a-9b2c-53ffcdbaec45, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-03 22:38:51,956 - basicLogger - INFO - Arrival event: trace_id=5eb0c9e4-9053-442d-87d4-e0ae414fb3fa, stop_id=50099, delay=4 mins
+2026-03-03 22:38:51,956 - basicLogger - INFO - Delay event: trace_id=fe60d266-aeac-411e-994d-6bafe6727797, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-03 22:39:00,094 - basicLogger - INFO - Arrival event: trace_id=16d527e1-a846-427b-ac91-7f52ecfa2e46, stop_id=50026, delay=16 mins
+2026-03-03 22:39:00,101 - basicLogger - INFO - Delay event: trace_id=75dfe4bc-275d-4465-8eb7-c8be8b67dfe8, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-03 22:39:00,188 - basicLogger - INFO - Arrival event: trace_id=420932c8-db91-4898-bf51-8817388151e8, stop_id=50065, delay=10 mins
+2026-03-03 22:39:00,195 - basicLogger - INFO - Delay event: trace_id=07ddd4ae-8575-4790-9f4a-f4d02c0b3167, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-03 22:39:00,288 - basicLogger - INFO - Arrival event: trace_id=29e20470-3200-4288-b716-0ead8b12837d, stop_id=50075, delay=7 mins
+2026-03-03 22:39:00,295 - basicLogger - INFO - Delay event: trace_id=2b176247-6e4b-441c-9f21-77e527cdb66c, route_id=99 B Line, delay=14 mins, cause=TRAFFIC
+2026-03-03 22:39:00,388 - basicLogger - INFO - Arrival event: trace_id=56698652-f917-4b31-89c0-6f5a9a9c7e83, stop_id=50092, delay=7 mins
+2026-03-03 22:39:00,395 - basicLogger - INFO - Delay event: trace_id=fc6be019-a237-465c-bc8e-23bb7fbe482c, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-03 22:39:00,489 - basicLogger - INFO - Arrival event: trace_id=e867a55e-1911-498a-8dbc-59b459314d95, stop_id=50090, delay=7 mins
+2026-03-03 22:39:00,498 - basicLogger - INFO - Delay event: trace_id=c750f28c-1765-4bc5-9ead-8d7fe6f2a29c, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-03 22:39:00,588 - basicLogger - INFO - Arrival event: trace_id=c0327d1d-5171-4108-942a-a3f5b46f6b69, stop_id=50031, delay=15 mins
+2026-03-03 22:39:00,594 - basicLogger - INFO - Delay event: trace_id=fd4ff866-44fe-44f8-95a1-eb0bf818be97, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-03 22:39:00,691 - basicLogger - INFO - Arrival event: trace_id=fc431789-7191-4962-8eb9-674d1b274de0, stop_id=50093, delay=11 mins
+2026-03-03 22:39:00,697 - basicLogger - INFO - Delay event: trace_id=e831c44e-dcfb-4b6a-b5c2-98c273858820, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-03 22:39:00,789 - basicLogger - INFO - Arrival event: trace_id=e1fd3587-c478-4379-baa5-07a05a0f5689, stop_id=50032, delay=12 mins
+2026-03-03 22:39:00,795 - basicLogger - INFO - Delay event: trace_id=782a3d9a-2ae2-49b1-914f-b1f376ad5757, route_id=99 B Line, delay=0 mins, cause=TRAFFIC
+2026-03-03 22:39:00,887 - basicLogger - INFO - Arrival event: trace_id=a5660d88-6f53-4bfa-8795-317816bfc05b, stop_id=50063, delay=3 mins
+2026-03-03 22:39:00,894 - basicLogger - INFO - Delay event: trace_id=fbbbb505-f7b8-4929-801b-fd7279127330, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-03 22:39:00,986 - basicLogger - INFO - Arrival event: trace_id=12005630-4e99-46a0-bd7e-d4565aa45650, stop_id=50032, delay=8 mins
+2026-03-03 22:39:00,993 - basicLogger - INFO - Delay event: trace_id=71f5d5d8-9149-4816-a06c-aee33b24c5b6, route_id=99 B Line, delay=7 mins, cause=TRAFFIC
+2026-03-03 22:43:15,934 - basicLogger - INFO - Analyzer consuming from topic: events
+2026-03-03 22:43:24,391 - basicLogger - INFO - Arrival event: trace_id=ac32cadc-69cf-43ca-a80c-3ebe686b4a9b, stop_id=50087, delay=17 mins
+2026-03-03 22:43:24,401 - basicLogger - INFO - Delay event: trace_id=60e94754-b316-4c66-8c68-7e42812b0c61, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-03 22:43:24,498 - basicLogger - INFO - Arrival event: trace_id=5b41714a-60b7-481d-a80f-effe39648830, stop_id=50072, delay=18 mins
+2026-03-03 22:43:24,508 - basicLogger - INFO - Delay event: trace_id=9aa7d0fe-5b89-42d3-bb4f-4561f6e9ff77, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-03 22:43:24,600 - basicLogger - INFO - Arrival event: trace_id=e09f733c-d878-4175-ae7d-ec142d2f9175, stop_id=50084, delay=11 mins
+2026-03-03 22:43:24,608 - basicLogger - INFO - Delay event: trace_id=348087e5-af66-4a80-abec-dceecbb2e512, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-03 22:43:24,683 - basicLogger - INFO - Arrival event: trace_id=14e92e4f-dc78-49a2-871e-42df6d29c9b8, stop_id=50034, delay=17 mins
+2026-03-03 22:43:24,690 - basicLogger - INFO - Delay event: trace_id=858a7505-789a-495c-b007-020f3964e2a1, route_id=99 B Line, delay=14 mins, cause=TRAFFIC
+2026-03-03 22:43:24,786 - basicLogger - INFO - Arrival event: trace_id=bcd8f260-cf41-4f94-b0bb-0c8445fd9a1d, stop_id=50029, delay=17 mins
+2026-03-03 22:43:24,792 - basicLogger - INFO - Delay event: trace_id=feb125ed-293f-4587-9617-6656212f26f6, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-03 22:43:24,885 - basicLogger - INFO - Arrival event: trace_id=17b56231-2952-49de-b23b-d5a57100fc59, stop_id=50006, delay=8 mins
+2026-03-03 22:43:24,892 - basicLogger - INFO - Delay event: trace_id=f5accae7-9e2d-4b45-bfa4-2332378695ef, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-03 22:43:24,984 - basicLogger - INFO - Arrival event: trace_id=ede55348-8130-405f-8004-0479fa99a4e6, stop_id=50030, delay=0 mins
+2026-03-03 22:43:24,991 - basicLogger - INFO - Delay event: trace_id=f51736f2-9a77-4248-9cb5-53377399bc96, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-03 22:43:25,087 - basicLogger - INFO - Arrival event: trace_id=07ce67c3-7149-4613-8f42-61a8a89e2c19, stop_id=50089, delay=13 mins
+2026-03-03 22:43:25,095 - basicLogger - INFO - Delay event: trace_id=19fb73af-1b24-414b-940a-68ca4f234bb5, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-03 22:43:25,188 - basicLogger - INFO - Arrival event: trace_id=6d2d06a3-5cd5-4582-bf4e-c3658a10c4c8, stop_id=50055, delay=2 mins
+2026-03-03 22:43:25,194 - basicLogger - INFO - Delay event: trace_id=19e1255e-077c-4401-8987-60fd67b6dda0, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-03 22:43:25,285 - basicLogger - INFO - Arrival event: trace_id=fb8e7c3e-642e-4694-a508-847d89049d40, stop_id=50099, delay=15 mins
+2026-03-03 22:43:25,292 - basicLogger - INFO - Delay event: trace_id=db1843bb-b8da-46cc-90b1-c2016079c829, route_id=99 B Line, delay=0 mins, cause=TRAFFIC
+2026-03-04 11:37:54,439 - basicLogger - INFO - Analyzer consuming from topic: events
+2026-03-04 11:37:57,808 - basicLogger - INFO - Arrival event: trace_id=54dafc6f-01bc-457b-813f-15bf8260b133, stop_id=50024, delay=0 mins
+2026-03-04 11:37:57,809 - basicLogger - INFO - Delay event: trace_id=2832894a-a754-432b-aa64-ea869310c831, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-04 11:37:57,809 - basicLogger - INFO - Arrival event: trace_id=deaa460d-3840-46b2-8494-aadfd5473a4c, stop_id=50021, delay=2 mins
+2026-03-04 11:37:57,809 - basicLogger - INFO - Delay event: trace_id=7717c3e3-880c-4442-b6a7-dc2987d8e258, route_id=99 B Line, delay=7 mins, cause=TRAFFIC
+2026-03-04 11:37:57,809 - basicLogger - INFO - Arrival event: trace_id=f58ab0c6-e468-4afb-b735-f61c5ae2d103, stop_id=50042, delay=18 mins
+2026-03-04 11:37:57,810 - basicLogger - INFO - Delay event: trace_id=5aa27fd4-5e5c-43b1-97b4-4e46ac56dcb1, route_id=99 B Line, delay=14 mins, cause=TRAFFIC
+2026-03-04 11:37:57,810 - basicLogger - INFO - Arrival event: trace_id=980c91c5-98de-43ca-b8c1-49d4f0d85137, stop_id=50050, delay=11 mins
+2026-03-04 11:37:57,810 - basicLogger - INFO - Delay event: trace_id=96ba6351-5033-437a-988e-bfb721469a04, route_id=99 B Line, delay=12 mins, cause=TRAFFIC
+2026-03-04 11:37:57,810 - basicLogger - INFO - Arrival event: trace_id=34c11327-daab-40ab-85bc-d2392eb9dece, stop_id=50067, delay=5 mins
+2026-03-04 11:37:57,810 - basicLogger - INFO - Delay event: trace_id=0437950b-b896-4d77-b24f-e8a876b71bf7, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:37:57,811 - basicLogger - INFO - Arrival event: trace_id=79c8f500-c378-4c0e-b87f-bdd14a2b8463, stop_id=50081, delay=0 mins
+2026-03-04 11:37:57,811 - basicLogger - INFO - Delay event: trace_id=a4b1b930-f3a1-4b57-9497-a5810d266578, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-04 11:37:57,811 - basicLogger - INFO - Arrival event: trace_id=788f4129-8dc2-4ca6-bbb3-92b8307eab72, stop_id=50026, delay=11 mins
+2026-03-04 11:37:57,811 - basicLogger - INFO - Delay event: trace_id=7175cb6f-f027-4a95-b003-a4fa20d3b916, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:37:57,812 - basicLogger - INFO - Arrival event: trace_id=e3a68b12-95df-4f8e-8c16-6058782fd97f, stop_id=50016, delay=17 mins
+2026-03-04 11:37:57,812 - basicLogger - INFO - Delay event: trace_id=e60d5c1b-480d-4e15-accd-e8c093854a18, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:37:57,812 - basicLogger - INFO - Arrival event: trace_id=57bd4a13-6a63-4196-b482-3ad9edee7b43, stop_id=50098, delay=17 mins
+2026-03-04 11:37:57,812 - basicLogger - INFO - Delay event: trace_id=d7612c90-a351-4142-bf68-04b46eca78b8, route_id=99 B Line, delay=7 mins, cause=TRAFFIC
+2026-03-04 11:37:57,812 - basicLogger - INFO - Arrival event: trace_id=191f47a6-b552-4d1d-98dd-19c4ee8aa132, stop_id=50083, delay=14 mins
+2026-03-04 11:37:57,813 - basicLogger - INFO - Delay event: trace_id=1901354d-c06f-4f88-b4e5-aed06aaf8c1f, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:37:57,813 - basicLogger - INFO - Arrival event: trace_id=f3198aa7-aa3b-45be-99f7-236fa4c2cec5, stop_id=50017, delay=3 mins
+2026-03-04 11:37:57,813 - basicLogger - INFO - Delay event: trace_id=4529c5cc-2a1b-4369-8ddf-86dc66b7d3ff, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:37:57,813 - basicLogger - INFO - Arrival event: trace_id=33b30a6c-4054-4951-a5f6-42ab62ecad03, stop_id=50021, delay=12 mins
+2026-03-04 11:37:57,813 - basicLogger - INFO - Delay event: trace_id=7c8547b2-5ecf-4785-a5c4-d9ce9c9352d3, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:37:57,814 - basicLogger - INFO - Arrival event: trace_id=53dc2a6a-3b70-44d0-b281-d622003ef1e2, stop_id=50005, delay=1 mins
+2026-03-04 11:37:57,814 - basicLogger - INFO - Delay event: trace_id=b51a1063-d125-464e-bebc-08fe899ac280, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-04 11:37:57,814 - basicLogger - INFO - Arrival event: trace_id=58ff0fba-2a9a-4970-9c88-1feb4672100d, stop_id=50037, delay=13 mins
+2026-03-04 11:37:57,814 - basicLogger - INFO - Delay event: trace_id=7252ee4a-c988-4459-ae84-714f89c394e1, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:37:57,815 - basicLogger - INFO - Arrival event: trace_id=0cad3561-a5b3-4e16-96b1-bed782a3a552, stop_id=50039, delay=18 mins
+2026-03-04 11:37:57,815 - basicLogger - INFO - Delay event: trace_id=1b39bc46-97a8-4a6e-8c8d-da5b88b21f77, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-04 11:37:57,815 - basicLogger - INFO - Arrival event: trace_id=1113dfbe-4a99-482a-8fb4-69fb7d99a112, stop_id=50038, delay=14 mins
+2026-03-04 11:37:57,816 - basicLogger - INFO - Delay event: trace_id=7a459667-52fa-4a9d-ba55-762e2b6917b2, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:37:57,816 - basicLogger - INFO - Arrival event: trace_id=b3b64706-2394-43ae-a16a-d9871f70d737, stop_id=50060, delay=12 mins
+2026-03-04 11:37:57,816 - basicLogger - INFO - Delay event: trace_id=abac3014-426b-4fff-8dab-fc094692947f, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:37:57,816 - basicLogger - INFO - Arrival event: trace_id=c1a7b0c9-71fa-44d8-8d4e-2b570dbeda4b, stop_id=50018, delay=15 mins
+2026-03-04 11:37:57,817 - basicLogger - INFO - Delay event: trace_id=275fe004-cea3-4de6-8b2d-a5bc80d295d0, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:37:57,817 - basicLogger - INFO - Arrival event: trace_id=15904964-dc3b-4e77-b52d-22ac04cf46c3, stop_id=50034, delay=14 mins
+2026-03-04 11:37:57,817 - basicLogger - INFO - Delay event: trace_id=f0c3eb1d-d60c-438e-84e1-e008a6f5dfac, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:37:57,817 - basicLogger - INFO - Arrival event: trace_id=68ff3c52-89e1-440b-b30a-5507d42589c3, stop_id=50015, delay=8 mins
+2026-03-04 11:37:57,818 - basicLogger - INFO - Delay event: trace_id=d8735b35-40a3-4d21-bf23-ac03acd1c376, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-04 11:37:57,818 - basicLogger - INFO - Arrival event: trace_id=463ae315-24fc-423f-9c35-a2b05d4c286b, stop_id=50023, delay=15 mins
+2026-03-04 11:37:57,818 - basicLogger - INFO - Delay event: trace_id=572157ab-fefa-4647-8f98-5762e4ef8d06, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-04 11:37:57,818 - basicLogger - INFO - Arrival event: trace_id=94e08139-542e-4c50-91e9-1caa00b6fc5c, stop_id=50008, delay=2 mins
+2026-03-04 11:37:57,818 - basicLogger - INFO - Delay event: trace_id=f21e14bf-6ab0-4476-b465-a205e26b5a03, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-04 11:37:57,819 - basicLogger - INFO - Arrival event: trace_id=d4722732-5731-426e-953e-848d6de196a5, stop_id=50069, delay=18 mins
+2026-03-04 11:37:57,819 - basicLogger - INFO - Delay event: trace_id=3fea1a58-00c0-4130-a91f-ab9a23cb77e4, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:37:57,819 - basicLogger - INFO - Arrival event: trace_id=96f77c99-0d38-43d0-a157-2fce73869c13, stop_id=50002, delay=16 mins
+2026-03-04 11:37:57,819 - basicLogger - INFO - Delay event: trace_id=25ef9744-1981-4da1-b518-67dd10489cb2, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:37:57,820 - basicLogger - INFO - Arrival event: trace_id=e264d020-2a35-4e1e-85fd-259cb16895da, stop_id=50047, delay=8 mins
+2026-03-04 11:37:57,820 - basicLogger - INFO - Delay event: trace_id=f376e4ff-71c9-417c-8154-192c2aaee739, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:37:57,820 - basicLogger - INFO - Arrival event: trace_id=ea688ede-9c9b-49af-995a-808c3732552a, stop_id=50037, delay=13 mins
+2026-03-04 11:37:57,820 - basicLogger - INFO - Delay event: trace_id=1ee07c92-dddc-44ba-9e3b-79dc5efd3165, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:37:57,822 - basicLogger - INFO - Arrival event: trace_id=3cc7c319-57ef-4fa1-a4de-436b07292add, stop_id=50051, delay=9 mins
+2026-03-04 11:37:57,822 - basicLogger - INFO - Delay event: trace_id=3cb8d639-d707-45be-b517-4e7f7485613e, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:37:57,823 - basicLogger - INFO - Arrival event: trace_id=5ca6b201-3fa3-4b92-8ebc-c4fa3ccd3bb1, stop_id=50066, delay=6 mins
+2026-03-04 11:37:57,823 - basicLogger - INFO - Delay event: trace_id=397faf27-017b-456c-b395-0023bbf15c1a, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:37:57,824 - basicLogger - INFO - Arrival event: trace_id=ea3f2c4e-a6a6-4f58-b01d-965f38131326, stop_id=50055, delay=13 mins
+2026-03-04 11:37:57,824 - basicLogger - INFO - Delay event: trace_id=6ca4a1eb-af24-4062-a453-eb3efa6460c2, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:37:57,825 - basicLogger - INFO - Arrival event: trace_id=1fbf655d-95a1-458f-a452-4923cf7a480a, stop_id=50011, delay=16 mins
+2026-03-04 11:37:57,825 - basicLogger - INFO - Delay event: trace_id=b2dd8a01-2e3d-4900-bf91-bd19e0b27b78, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:49:15,442 - basicLogger - INFO - Analyzer consuming from topic: events
+2026-03-04 11:49:18,676 - basicLogger - INFO - Arrival event: trace_id=bb096383-4a47-476c-b870-177478667822, stop_id=50026, delay=8 mins
+2026-03-04 11:49:18,676 - basicLogger - INFO - Delay event: trace_id=fda4fb46-8682-46b1-a7a0-61a34dfc4f22, route_id=99 B Line, delay=10 mins, cause=TRAFFIC
+2026-03-04 11:49:18,677 - basicLogger - INFO - Arrival event: trace_id=df69fd86-3035-4697-bb04-0ea37758a1e5, stop_id=50080, delay=16 mins
+2026-03-04 11:49:18,677 - basicLogger - INFO - Delay event: trace_id=80298353-3be1-4f9e-96b5-1ed7248a6bc0, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:49:18,677 - basicLogger - INFO - Arrival event: trace_id=5edbbeae-12ad-48cb-9fcb-31a219e29436, stop_id=50086, delay=8 mins
+2026-03-04 11:49:18,677 - basicLogger - INFO - Delay event: trace_id=2d4611a4-f144-451c-a066-dc2efef449f8, route_id=99 B Line, delay=14 mins, cause=TRAFFIC
+2026-03-04 11:49:18,677 - basicLogger - INFO - Arrival event: trace_id=671b44c4-1c63-4757-a0b7-af6c237ebd78, stop_id=50029, delay=3 mins
+2026-03-04 11:49:18,678 - basicLogger - INFO - Delay event: trace_id=a0c683a4-e090-44ea-ae02-558b5ed738fa, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:49:18,678 - basicLogger - INFO - Arrival event: trace_id=79d3bf29-b4c4-49c8-ba7e-41f4ec1fa95d, stop_id=50053, delay=3 mins
+2026-03-04 11:49:18,678 - basicLogger - INFO - Delay event: trace_id=317a3e5e-415b-49f7-98bf-77c1799f84ac, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:49:18,678 - basicLogger - INFO - Arrival event: trace_id=a6285f09-7d59-4bc2-8381-d88bf7dd9163, stop_id=50077, delay=9 mins
+2026-03-04 11:49:18,678 - basicLogger - INFO - Delay event: trace_id=0481b9b4-927a-4b2a-9059-036f9d44a334, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:49:18,679 - basicLogger - INFO - Arrival event: trace_id=ea58d470-5ca7-472b-b34d-d27d1b3082f9, stop_id=50080, delay=6 mins
+2026-03-04 11:49:18,679 - basicLogger - INFO - Delay event: trace_id=9be15b78-95c4-4b0a-93d2-53181953b87c, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-04 11:49:18,679 - basicLogger - INFO - Arrival event: trace_id=a0eca9f0-60a0-44f0-98f6-992512da8320, stop_id=50065, delay=17 mins
+2026-03-04 11:49:18,679 - basicLogger - INFO - Delay event: trace_id=8dd49e98-f1c6-4f1b-8257-e71b29f741d3, route_id=99 B Line, delay=14 mins, cause=TRAFFIC
+2026-03-04 11:49:18,679 - basicLogger - INFO - Arrival event: trace_id=846cd774-22b9-4fbd-bc99-1c3c96ed5ee4, stop_id=50008, delay=18 mins
+2026-03-04 11:49:18,680 - basicLogger - INFO - Delay event: trace_id=30321a3e-d352-430d-947d-ea02dfaf5ac8, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:49:18,680 - basicLogger - INFO - Arrival event: trace_id=c70233f2-41db-475d-8399-2e39b2fd17ab, stop_id=50080, delay=1 mins
+2026-03-04 11:49:18,680 - basicLogger - INFO - Delay event: trace_id=11b7013f-93c9-4d3b-9d4f-cc5653eee244, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:49:30,340 - basicLogger - INFO - Arrival event: trace_id=3f5d48bb-c34d-460f-ba33-447e47ffc44d, stop_id=50099, delay=4 mins
+2026-03-04 11:49:30,349 - basicLogger - INFO - Delay event: trace_id=838c376e-617b-4e9d-89d7-226c02ca62c2, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:49:30,444 - basicLogger - INFO - Arrival event: trace_id=d102d688-09fc-4498-9e68-f0febda894f2, stop_id=50060, delay=0 mins
+2026-03-04 11:49:30,453 - basicLogger - INFO - Delay event: trace_id=4239eac6-6133-4153-8d99-205878d3f424, route_id=99 B Line, delay=4 mins, cause=TRAFFIC
+2026-03-04 11:49:30,551 - basicLogger - INFO - Arrival event: trace_id=fefa5777-9a5e-4571-8046-c9e08c2302b4, stop_id=50071, delay=13 mins
+2026-03-04 11:49:30,557 - basicLogger - INFO - Delay event: trace_id=a61f3eb9-d380-4ef6-8a8e-f325eed9a571, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:49:30,642 - basicLogger - INFO - Arrival event: trace_id=ac64d393-3fb9-4da8-a923-c534f08dcd93, stop_id=50028, delay=13 mins
+2026-03-04 11:49:30,650 - basicLogger - INFO - Delay event: trace_id=4cadcc3d-143c-4caf-b820-4a00b3f9b2fc, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:49:30,751 - basicLogger - INFO - Arrival event: trace_id=310b4111-ca3e-4566-b04a-d104a11b2e5e, stop_id=50043, delay=17 mins
+2026-03-04 11:49:30,758 - basicLogger - INFO - Delay event: trace_id=e4cb88c0-a110-453a-abdf-38ecde78b128, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:49:30,837 - basicLogger - INFO - Arrival event: trace_id=6367e647-3357-47db-9064-e98859213b6c, stop_id=50075, delay=0 mins
+2026-03-04 11:49:30,843 - basicLogger - INFO - Delay event: trace_id=88e77b31-3a16-4dcc-8809-66ad59e499fc, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:49:30,937 - basicLogger - INFO - Arrival event: trace_id=b86069c8-1fe0-4d64-ba04-c3bb0c66085c, stop_id=50022, delay=2 mins
+2026-03-04 11:49:30,943 - basicLogger - INFO - Delay event: trace_id=7b856d59-159b-48f8-b9b9-33371895b758, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:49:31,037 - basicLogger - INFO - Arrival event: trace_id=15b7c060-81e8-4d86-959a-e1fa3efdd447, stop_id=50054, delay=13 mins
+2026-03-04 11:49:31,044 - basicLogger - INFO - Delay event: trace_id=79959de9-bae4-4e0b-8c81-36f4d9cc96b7, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:49:31,138 - basicLogger - INFO - Arrival event: trace_id=5bbc1914-5916-4677-9a6d-f7211a732996, stop_id=50098, delay=14 mins
+2026-03-04 11:49:31,145 - basicLogger - INFO - Delay event: trace_id=eafc1d9f-6edb-4861-8c4a-7a4623503582, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:49:31,237 - basicLogger - INFO - Arrival event: trace_id=5bb5d84b-9ff1-4364-a3b7-7ea08020504f, stop_id=50096, delay=9 mins
+2026-03-04 11:49:31,244 - basicLogger - INFO - Delay event: trace_id=98f27467-8add-4db2-9e96-da32d05fa2ff, route_id=99 B Line, delay=3 mins, cause=TRAFFIC
+2026-03-04 11:53:13,611 - basicLogger - INFO - Arrival event: trace_id=601c429a-5ada-4e28-a02e-cc680a9290f4, stop_id=50064, delay=7 mins
+2026-03-04 11:53:13,620 - basicLogger - INFO - Delay event: trace_id=61e97030-6236-4115-af6d-2e18044bf001, route_id=99 B Line, delay=12 mins, cause=TRAFFIC
+2026-03-04 11:53:13,714 - basicLogger - INFO - Arrival event: trace_id=ba0701e0-4bda-48b6-a80f-e2d753589eeb, stop_id=50006, delay=14 mins
+2026-03-04 11:53:13,721 - basicLogger - INFO - Delay event: trace_id=4a026d03-0f31-4203-9632-1a0a6b3f3b4e, route_id=99 B Line, delay=2 mins, cause=TRAFFIC
+2026-03-04 11:53:13,820 - basicLogger - INFO - Arrival event: trace_id=e76944d1-997f-4b66-a94c-e7caec6e9c6a, stop_id=50069, delay=14 mins
+2026-03-04 11:53:13,826 - basicLogger - INFO - Delay event: trace_id=c125da59-2651-49a7-91c9-a2eaba94345b, route_id=99 B Line, delay=6 mins, cause=TRAFFIC
+2026-03-04 11:53:13,905 - basicLogger - INFO - Arrival event: trace_id=ab4fc6b1-684f-4c2d-9387-b44a5211f7b3, stop_id=50008, delay=6 mins
+2026-03-04 11:53:13,912 - basicLogger - INFO - Delay event: trace_id=f76dfaa7-8126-475c-bc74-de6d6b6f6b9c, route_id=99 B Line, delay=3 mins, cause=TRAFFIC
+2026-03-04 11:53:14,005 - basicLogger - INFO - Arrival event: trace_id=8c267609-3db8-41ec-9c2d-b35a06625f32, stop_id=50016, delay=9 mins
+2026-03-04 11:53:14,011 - basicLogger - INFO - Delay event: trace_id=1ccba33c-444a-4bf6-afc3-6cc57453d4e0, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-04 11:53:14,108 - basicLogger - INFO - Arrival event: trace_id=850d776a-2f4d-41c5-b4df-703fc644be81, stop_id=50004, delay=2 mins
+2026-03-04 11:53:14,117 - basicLogger - INFO - Delay event: trace_id=8781f512-c4ca-4f54-bdfe-43401a9d11c8, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:53:14,204 - basicLogger - INFO - Arrival event: trace_id=be911366-526e-4354-959c-9aacb1e804f0, stop_id=50006, delay=16 mins
+2026-03-04 11:53:14,211 - basicLogger - INFO - Delay event: trace_id=39188517-8807-400b-b4e0-728f76fafa29, route_id=99 B Line, delay=5 mins, cause=TRAFFIC
+2026-03-04 11:53:14,305 - basicLogger - INFO - Arrival event: trace_id=5e67a5ab-d459-47c8-b2d3-bce79ea12674, stop_id=50002, delay=1 mins
+2026-03-04 11:53:14,311 - basicLogger - INFO - Delay event: trace_id=2ee4bf74-c4b4-467b-987e-f75e6d880e6d, route_id=99 B Line, delay=13 mins, cause=TRAFFIC
+2026-03-04 11:53:14,406 - basicLogger - INFO - Arrival event: trace_id=e917751f-dc90-4575-b0d6-5d9e293bb2bb, stop_id=50066, delay=7 mins
+2026-03-04 11:53:14,413 - basicLogger - INFO - Delay event: trace_id=031c1b38-7bcb-468c-b9d8-59841f0e87ec, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-04 11:53:14,504 - basicLogger - INFO - Arrival event: trace_id=1fc7b88f-b83a-48f2-ae1b-3bd70a6f570b, stop_id=50055, delay=7 mins
+2026-03-04 11:53:14,510 - basicLogger - INFO - Delay event: trace_id=2c24a7b9-2b20-423d-8992-e24472c05e6b, route_id=99 B Line, delay=12 mins, cause=TRAFFIC
+2026-03-04 11:53:18,549 - basicLogger - INFO - Arrival event: trace_id=0a3a4659-0b67-44dd-89f3-4feb12f14ce8, stop_id=50017, delay=3 mins
+2026-03-04 11:53:18,559 - basicLogger - INFO - Delay event: trace_id=0ea2bca1-8359-4318-a3f3-5bbd8295d4d4, route_id=99 B Line, delay=15 mins, cause=TRAFFIC
+2026-03-04 11:53:18,652 - basicLogger - INFO - Arrival event: trace_id=9262daa2-479f-4fbe-8f6c-438fdabb8a9a, stop_id=50074, delay=12 mins
+2026-03-04 11:53:18,660 - basicLogger - INFO - Delay event: trace_id=e5f5a708-e39a-450a-a74c-07e764b488cd, route_id=99 B Line, delay=3 mins, cause=TRAFFIC
+2026-03-04 11:53:18,747 - basicLogger - INFO - Arrival event: trace_id=e009cb67-f1e8-41cb-9143-30a51e4ba8aa, stop_id=50053, delay=11 mins
+2026-03-04 11:53:18,756 - basicLogger - INFO - Delay event: trace_id=fd58b676-7af7-4101-b5fc-5fee90d70a14, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 11:53:18,848 - basicLogger - INFO - Arrival event: trace_id=889e7300-93f1-4f15-8947-6c3940d4f47f, stop_id=50055, delay=3 mins
+2026-03-04 11:53:18,856 - basicLogger - INFO - Delay event: trace_id=983d1b41-3d02-42b3-a1fe-f06dcb2659f3, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-04 11:53:18,949 - basicLogger - INFO - Arrival event: trace_id=1047c9f8-7ca4-43b9-954b-20230bdfd9d0, stop_id=50009, delay=10 mins
+2026-03-04 11:53:18,956 - basicLogger - INFO - Delay event: trace_id=21bf245c-c33a-4ce2-8d00-14d5ef08cbfd, route_id=99 B Line, delay=11 mins, cause=TRAFFIC
+2026-03-04 11:53:19,046 - basicLogger - INFO - Arrival event: trace_id=4d59b66b-f740-4166-a842-5b6287919c87, stop_id=50094, delay=12 mins
+2026-03-04 11:53:19,054 - basicLogger - INFO - Delay event: trace_id=4f394bc5-ac94-4dd2-ae87-6ad48a623620, route_id=99 B Line, delay=7 mins, cause=TRAFFIC
+2026-03-04 11:53:19,147 - basicLogger - INFO - Arrival event: trace_id=5e4512d5-2bbb-45a3-aa29-78b068977ab6, stop_id=50080, delay=18 mins
+2026-03-04 11:53:19,154 - basicLogger - INFO - Delay event: trace_id=47cec601-319c-4e70-9d96-ab74bd7e91a6, route_id=99 B Line, delay=8 mins, cause=TRAFFIC
+2026-03-04 11:53:19,247 - basicLogger - INFO - Arrival event: trace_id=f94fca88-2546-46a9-b2a4-67d239835514, stop_id=50099, delay=9 mins
+2026-03-04 11:53:19,254 - basicLogger - INFO - Delay event: trace_id=3ada6a8c-834c-434c-8860-13b146f02eb7, route_id=99 B Line, delay=2 mins, cause=TRAFFIC
+2026-03-04 11:53:19,349 - basicLogger - INFO - Arrival event: trace_id=f1743f81-ab32-46e8-8292-e855d309ffe9, stop_id=50015, delay=1 mins
+2026-03-04 11:53:19,356 - basicLogger - INFO - Delay event: trace_id=693b73d6-2b19-460d-b6d5-eaef66245d71, route_id=99 B Line, delay=1 mins, cause=TRAFFIC
+2026-03-04 11:53:19,446 - basicLogger - INFO - Arrival event: trace_id=a2c05a00-51f3-4087-b303-2d9c283c96a1, stop_id=50098, delay=18 mins
+2026-03-04 11:53:19,452 - basicLogger - INFO - Delay event: trace_id=6ed5ad9a-1751-4d93-8ae4-478856fcab31, route_id=99 B Line, delay=9 mins, cause=TRAFFIC
+2026-03-04 12:06:45,328 - basicLogger - INFO - Starting Analyzer Service
+2026-03-04 12:06:45,330 - basicLogger - INFO - Kafka configured for topic 'events' at localhost:9092
+2026-03-04 12:06:45,332 - basicLogger - INFO - Analyzer service running on port 8081
+2026-03-04 12:06:51,974 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:06:51,975 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:06:57,898 - basicLogger - INFO - Stats calculated - Arrivals: 190, Delays: 190
+2026-03-04 12:06:57,902 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:06:57,902 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:06:57,949 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:06:57,952 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:06:57,952 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:06:58,004 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:07:29,945 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:07:29,946 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:35,858 - basicLogger - INFO - Stats calculated - Arrivals: 200, Delays: 200
+2026-03-04 12:07:35,861 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:07:35,861 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:35,919 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:07:35,923 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:07:35,924 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:35,974 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:07:47,437 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:07:47,437 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:53,361 - basicLogger - INFO - Stats calculated - Arrivals: 210, Delays: 210
+2026-03-04 12:07:53,365 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:07:53,365 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:53,416 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:07:53,420 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:07:53,420 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:07:53,476 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:08:00,469 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:08:00,470 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:08:06,385 - basicLogger - INFO - Stats calculated - Arrivals: 220, Delays: 220
+2026-03-04 12:08:06,388 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:08:06,388 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:08:06,443 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:08:06,446 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:08:06,446 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:08:06,498 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:16:13,374 - basicLogger - INFO - Starting Analyzer Service
+2026-03-04 12:16:13,375 - basicLogger - INFO - Kafka configured for topic 'events' at localhost:9092
+2026-03-04 12:16:13,377 - basicLogger - INFO - Analyzer service running on port 8081
+2026-03-04 12:16:22,045 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:16:22,045 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:16:27,962 - basicLogger - INFO - Stats calculated - Arrivals: 230, Delays: 230
+2026-03-04 12:16:27,966 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:16:27,966 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:16:28,024 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:16:28,027 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:16:28,027 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:16:28,081 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:47:02,142 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:47:02,142 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:08,058 - basicLogger - INFO - Stats calculated - Arrivals: 240, Delays: 240
+2026-03-04 12:47:08,061 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:47:08,061 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:08,115 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:47:08,117 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:47:08,118 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:13,191 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:47:13,194 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:47:13,194 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:13,250 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:47:13,253 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:47:13,253 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:18,312 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:47:19,252 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:47:19,252 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:25,169 - basicLogger - INFO - Stats calculated - Arrivals: 250, Delays: 250
+2026-03-04 12:47:25,172 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:47:25,172 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:25,246 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:47:25,249 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:47:25,249 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:30,317 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:47:30,320 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:47:30,320 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:30,385 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:47:30,388 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:47:30,388 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:35,467 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:47:38,065 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:47:38,065 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:43,982 - basicLogger - INFO - Stats calculated - Arrivals: 260, Delays: 260
+2026-03-04 12:47:43,985 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:47:43,985 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:44,043 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:47:44,046 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:47:44,046 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:49,115 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:47:49,118 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:47:49,118 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:49,179 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:47:49,181 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:47:49,181 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:47:54,243 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:48:05,338 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:48:05,338 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:11,249 - basicLogger - INFO - Stats calculated - Arrivals: 270, Delays: 270
+2026-03-04 12:48:11,252 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:48:11,252 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:11,319 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:48:11,322 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:48:11,322 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:16,384 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:48:16,387 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:48:16,387 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:16,451 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:48:16,454 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:48:16,454 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:21,533 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:48:39,585 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:48:39,585 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:48:44,660 - basicLogger - INFO - Stats calculated - Arrivals: 270, Delays: 270
+2026-03-04 12:49:53,785 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:49:53,785 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:49:55,931 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:49:55,931 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:49:59,701 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:49:59,704 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:49:59,704 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:49:59,760 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:49:59,763 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:49:59,763 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:01,011 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:50:03,028 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:03,028 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:04,835 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:50:04,840 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:50:04,840 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:04,917 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:50:04,921 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:50:04,921 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:08,113 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:50:09,993 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:50:10,436 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:10,437 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:15,518 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:50:17,497 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:17,498 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:22,580 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:50:27,269 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:27,269 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:32,335 - basicLogger - INFO - Stats calculated - Arrivals: 280, Delays: 280
+2026-03-04 12:50:39,751 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:39,752 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:41,921 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:41,921 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:45,685 - basicLogger - INFO - Stats calculated - Arrivals: 290, Delays: 290
+2026-03-04 12:50:45,688 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:50:45,688 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:45,748 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:50:45,752 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:50:45,752 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:46,998 - basicLogger - INFO - Stats calculated - Arrivals: 290, Delays: 290
+2026-03-04 12:50:50,844 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:50:50,847 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:50:50,847 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:50,903 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:50:50,906 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:50:50,906 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:54,382 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:50:54,383 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:50:55,976 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:50:59,456 - basicLogger - INFO - Stats calculated - Arrivals: 290, Delays: 290
+2026-03-04 12:51:01,477 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:01,477 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:07,386 - basicLogger - INFO - Stats calculated - Arrivals: 300, Delays: 300
+2026-03-04 12:51:07,389 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:51:07,389 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:07,453 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:51:07,456 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:51:07,456 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:10,884 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:10,884 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:12,104 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:12,104 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:12,543 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:51:12,546 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:51:12,547 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:12,603 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:51:12,606 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:51:12,607 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:15,959 - basicLogger - INFO - Stats calculated - Arrivals: 300, Delays: 300
+2026-03-04 12:51:17,179 - basicLogger - INFO - Stats calculated - Arrivals: 300, Delays: 300
+2026-03-04 12:51:17,699 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:51:27,611 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:27,611 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:32,728 - basicLogger - INFO - Stats calculated - Arrivals: 300, Delays: 300
+2026-03-04 12:51:41,992 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:41,993 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:45,054 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:51:45,054 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:47,911 - basicLogger - INFO - Stats calculated - Arrivals: 310, Delays: 310
+2026-03-04 12:51:47,914 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:51:47,914 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:47,993 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:51:47,996 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:51:47,996 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:50,138 - basicLogger - INFO - Stats calculated - Arrivals: 310, Delays: 310
+2026-03-04 12:51:53,070 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:51:53,077 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:51:53,078 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:53,140 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:51:53,144 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:51:53,144 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:51:58,235 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:52:01,457 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:01,457 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:06,535 - basicLogger - INFO - Stats calculated - Arrivals: 310, Delays: 310
+2026-03-04 12:52:09,389 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:09,389 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:11,674 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:11,674 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:15,306 - basicLogger - INFO - Stats calculated - Arrivals: 320, Delays: 320
+2026-03-04 12:52:15,309 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:52:15,309 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:15,389 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:52:15,392 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:52:15,393 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:16,788 - basicLogger - INFO - Stats calculated - Arrivals: 320, Delays: 320
+2026-03-04 12:52:20,498 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:52:20,500 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:52:20,501 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:20,560 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:52:20,564 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:52:20,564 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:21,820 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:21,821 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:25,644 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:52:26,903 - basicLogger - INFO - Stats calculated - Arrivals: 320, Delays: 320
+2026-03-04 12:52:32,546 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:32,546 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:34,793 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:34,793 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:38,463 - basicLogger - INFO - Stats calculated - Arrivals: 330, Delays: 330
+2026-03-04 12:52:38,465 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:52:38,466 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:38,519 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:52:38,521 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:52:38,522 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:39,885 - basicLogger - INFO - Stats calculated - Arrivals: 330, Delays: 330
+2026-03-04 12:52:43,617 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:52:43,621 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:52:43,621 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:43,678 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:52:43,681 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:52:43,681 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:48,767 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:52:52,066 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:52,066 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:54,724 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:52:54,724 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:57,981 - basicLogger - INFO - Stats calculated - Arrivals: 340, Delays: 340
+2026-03-04 12:52:57,984 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:52:57,984 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:58,052 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:52:58,056 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:52:58,057 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:52:59,823 - basicLogger - INFO - Stats calculated - Arrivals: 340, Delays: 340
+2026-03-04 12:53:03,157 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:53:03,160 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:53:03,160 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:53:03,218 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:53:03,221 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:53:03,221 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:53:08,303 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:53:51,496 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:53:51,496 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:53:57,418 - basicLogger - INFO - Stats calculated - Arrivals: 350, Delays: 350
+2026-03-04 12:53:57,423 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:53:57,423 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:53:57,518 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:53:57,522 - basicLogger - INFO - Request received for arrival at index 1000
+2026-03-04 12:53:57,522 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:02,661 - basicLogger - WARNING - No arrival event found at index 1000
+2026-03-04 12:54:02,665 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:54:02,665 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:02,775 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:54:02,779 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:54:02,779 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:07,899 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:54:35,688 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:54:35,690 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:41,618 - basicLogger - INFO - Stats calculated - Arrivals: 360, Delays: 360
+2026-03-04 12:54:41,622 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:54:41,623 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:41,796 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:54:41,800 - basicLogger - INFO - Request received for arrival at index 340
+2026-03-04 12:54:41,800 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:41,943 - basicLogger - INFO - Arrival found at index 340
+2026-03-04 12:54:41,947 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:54:41,948 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:42,065 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:54:42,069 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:54:42,070 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:47,260 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:54:53,886 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:54:53,886 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:59,801 - basicLogger - INFO - Stats calculated - Arrivals: 370, Delays: 370
+2026-03-04 12:54:59,806 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:54:59,806 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:54:59,958 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:54:59,962 - basicLogger - INFO - Request received for arrival at index 340
+2026-03-04 12:54:59,963 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:00,095 - basicLogger - INFO - Arrival found at index 340
+2026-03-04 12:55:00,098 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:55:00,099 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:00,187 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:55:00,191 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:55:00,191 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:05,318 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:55:12,711 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:55:12,711 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:18,655 - basicLogger - INFO - Stats calculated - Arrivals: 380, Delays: 380
+2026-03-04 12:55:18,660 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:55:18,660 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:18,774 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:55:18,778 - basicLogger - INFO - Request received for arrival at index 350
+2026-03-04 12:55:18,779 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:18,892 - basicLogger - INFO - Arrival found at index 350
+2026-03-04 12:55:18,896 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:55:18,896 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:18,979 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:55:18,983 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:55:18,984 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:24,119 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:55:25,648 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:55:25,649 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:30,796 - basicLogger - INFO - Stats calculated - Arrivals: 380, Delays: 380
+2026-03-04 12:55:40,443 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:55:40,444 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:46,382 - basicLogger - INFO - Stats calculated - Arrivals: 390, Delays: 390
+2026-03-04 12:55:46,386 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:55:46,387 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:46,474 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:55:46,479 - basicLogger - INFO - Request received for arrival at index 380
+2026-03-04 12:55:46,480 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:46,624 - basicLogger - INFO - Arrival found at index 380
+2026-03-04 12:55:46,628 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:55:46,629 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:46,704 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:55:46,708 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:55:46,708 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:51,088 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:55:51,089 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:55:51,820 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:55:56,208 - basicLogger - INFO - Stats calculated - Arrivals: 390, Delays: 390
+2026-03-04 12:56:11,823 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:56:11,824 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:16,509 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:56:16,511 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:17,747 - basicLogger - INFO - Stats calculated - Arrivals: 400, Delays: 400
+2026-03-04 12:56:17,755 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:56:17,756 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:17,887 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:56:17,892 - basicLogger - INFO - Request received for arrival at index 450
+2026-03-04 12:56:17,893 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:21,708 - basicLogger - INFO - Stats calculated - Arrivals: 400, Delays: 400
+2026-03-04 12:56:23,084 - basicLogger - WARNING - No arrival event found at index 450
+2026-03-04 12:56:23,089 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:56:23,089 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:23,208 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:56:23,213 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:56:23,213 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:56:28,348 - basicLogger - WARNING - No delay event found at index 1000
+2026-03-04 12:57:54,758 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:57:54,759 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:57:59,901 - basicLogger - INFO - Stats calculated - Arrivals: 400, Delays: 400
+2026-03-04 12:58:21,848 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:58:21,849 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:26,219 - basicLogger - INFO - Stats endpoint called
+2026-03-04 12:58:26,219 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:27,771 - basicLogger - INFO - Stats calculated - Arrivals: 410, Delays: 410
+2026-03-04 12:58:27,776 - basicLogger - INFO - Request received for arrival at index 0
+2026-03-04 12:58:27,776 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:27,863 - basicLogger - INFO - Arrival found at index 0
+2026-03-04 12:58:27,867 - basicLogger - INFO - Request received for arrival at index 450
+2026-03-04 12:58:27,868 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:31,350 - basicLogger - INFO - Stats calculated - Arrivals: 410, Delays: 410
+2026-03-04 12:58:33,062 - basicLogger - WARNING - No arrival event found at index 450
+2026-03-04 12:58:33,066 - basicLogger - INFO - Request received for delay at index 0
+2026-03-04 12:58:33,066 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:33,166 - basicLogger - INFO - Delay found at index 0
+2026-03-04 12:58:33,170 - basicLogger - INFO - Request received for delay at index 1000
+2026-03-04 12:58:33,170 - basicLogger - DEBUG - Creating new Kafka consumer
+2026-03-04 12:58:38,301 - basicLogger - WARNING - No delay event found at index 1000

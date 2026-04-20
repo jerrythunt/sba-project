@@ -1,0 +1,78 @@
+openapi: 3.0.3
+info:
+  title: Processing Service API
+  version: 1.0.0
+  description: Provides computed statistics from stored arrival and delay events.
+
+servers:
+  - url: http://processing:8080
+    description: Local processing service
+
+paths:
+  /statistics:
+    get:
+      summary: Get computed transit statistics
+      description: Returns cumulative counts and max delay stats from stored arrival and delay events
+      operationId: app.get_statistics
+      responses:
+        '200':
+          description: Successfully returned statistics
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventStatistics'
+        '404':
+          description: Statistics not available yet
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Statistics not available yet
+
+  /health:
+    get:
+      summary: Health Check
+      description: Returns the health status of the Processing service
+      operationId: app.get_health
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    example: ok
+
+components:
+  schemas:
+    EventStatistics:
+      type: object
+      required:
+        - cumulative_arrivals
+        - cumulative_delays
+        - max_arrival_delay_minutes
+        - max_reported_delay_minutes
+        - last_updated
+      properties:
+        cumulative_arrivals:
+          type: integer
+          example: 150
+        cumulative_delays:
+          type: integer
+          example: 80
+        max_arrival_delay_minutes:
+          type: number
+          example: 12
+        max_reported_delay_minutes:
+          type: number
+          example: 25
+        last_updated:
+          type: string
+          format: date-time
+          example: "2026-02-10T18:50:00Z"
